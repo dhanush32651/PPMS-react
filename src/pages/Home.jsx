@@ -45,7 +45,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <span className="pill"><ShieldCheck size={15} /> Trusted by owners &amp; tenants</span>
-            <h1>Manage Your Properties Smarter, Not Harder.</h1>
+            <h1>Manage Your Properties Smarter</h1>
             <p>One simple platform to manage properties, tenants, rental payments, and lease information.</p>
             <div className="hero-btns">
               <Link to="/explore" className="btn btn-accent btn-lg">Explore Properties</Link>
