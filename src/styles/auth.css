@@ -1,0 +1,18 @@
+.auth { min-height: 100vh; display: grid; grid-template-columns: 1.05fr 1fr; background: #fff; }
+.auth-art { position: relative; overflow: hidden; color: #fff; } .auth-art > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: kenburns 24s ease-in-out infinite alternate; }
+@keyframes kenburns { to { transform: scale(1.1) translate(-1.5%, -1%); } }
+.auth-shade { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(23, 37, 84, .82), rgba(23, 37, 84, .35) 50%, rgba(8, 15, 40, .9)); }
+.auth-art-content { position: relative; height: 100%; padding: 40px 48px; display: flex; flex-direction: column; justify-content: space-between; }
+.auth-quote h2 { color: #fff; font-size: clamp(1.8rem, 3vw, 2.6rem); max-width: 460px; } .auth-quote ul { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 12px; } .auth-quote li { display: flex; gap: 10px; align-items: center; color: #e2e8f0; } .auth-quote li svg { color: var(--green); }
+.auth-panel { padding: 32px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: var(--bg); position: relative; overflow-y: auto; }
+.back-home { position: absolute; top: 28px; left: 32px; display: inline-flex; gap: 6px; align-items: center; color: var(--muted); font-size: .9rem; font-weight: 500; } .back-home:hover { color: var(--blue); }
+.auth-card { width: min(460px, 100%); background: #fff; padding: 38px; border-radius: 24px; box-shadow: var(--shadow-lg); margin: 56px 0 20px; animation: pop .5s; }
+.auth-card h1 { font-size: 1.9rem; margin-bottom: 6px; } .auth-card > .muted { margin-bottom: 24px; }
+.input-icon { position: relative; display: flex; align-items: center; } .input-icon > svg { position: absolute; left: 14px; color: #94a3b8; pointer-events: none; } .input-icon input, .input-icon select { padding-left: 44px; }
+.input-icon .eye { position: absolute; right: 8px; border: 0; background: transparent; color: #94a3b8; padding: 8px; display: grid; } .input-icon .eye:hover { color: var(--blue); } .input-icon .eye ~ * { }
+.role-pick { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
+.role-pick button { display: grid; justify-items: center; gap: 2px; padding: 16px 10px; border: 2px solid var(--line); background: #fff; border-radius: 16px; color: var(--muted); transition: .2s; } .role-pick button strong { color: var(--navy); } .role-pick small { font-size: .78rem; }
+.role-pick button:hover { border-color: #93c5fd; } .role-pick button.on { border-color: var(--green); background: #ecfdf5; color: #059669; box-shadow: 0 0 0 4px rgba(16, 185, 129, .12); }
+.switch { text-align: center; margin: 16px 0 0; color: var(--muted); } .switch a { color: var(--blue); font-weight: 600; }
+.demo-box { margin-top: 22px; padding: 14px; background: #f1f5f9; border-radius: 14px; text-align: center; } .demo-box p { margin: 0 0 8px; font-size: .82rem; color: var(--muted); } .demo-box div { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.demo-box button { border: 1px solid var(--line); background: #fff; padding: 6px 14px; border-radius: 999px; font-size: .82rem; font-weight: 600; color: var(--navy); } .demo-box button:hover { border-color: var(--blue); color: var(--blue); }
